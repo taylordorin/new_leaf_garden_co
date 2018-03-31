@@ -1,0 +1,29 @@
+@import "font-face";
+@import 'colors';
+
+@include font-face('Avenir-Roman-webfont');
+@include font-face('Avenir-Medium-webfont');
+
+$avenir-roman: 'Avenir-Roman-webfont', sans-serif;
+$avenir-medium: 'Avenir-Medium-webfont', sans-serif;
+$berlin-email: 'Berlin-Email-Schaddow', serif;
+
+$franklein-book: 'FranKleinBook', sans-serif;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: $torture-device;
+}
+
+p {
+  font-family: $avenir-roman;
+}
+
+h5 {
+  font-family: $avenir-medium;
+}

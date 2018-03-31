@@ -3,9 +3,17 @@
 
 @include font-face('Avenir-Roman-webfont');
 @include font-face('Avenir-Medium-webfont');
+@include font-face('Avenir-Black-webfont');
+@include font-face('Avenir-Light-webfont');
+@include font-face('Avenir-MediumOblique-webfont');
+@include font-face('Avenir-Oblique-webfont');
 
 $avenir-roman: 'Avenir-Roman-webfont', sans-serif;
 $avenir-medium: 'Avenir-Medium-webfont', sans-serif;
+$avenir-black: 'Avenir-Black-webfont', sans-serif;
+$avenir-light: 'Avenir-Light-webfont', sans-serif;
+$avenir-oblique: 'venir-MediumOblique-webfont', sans-serif;
+$avenir-medium-blique: 'Avenir-Oblique-webfont', sans-serif;
 $berlin-email: 'Berlin-Email-Schaddow', serif;
 
 $franklein-book: 'FranKleinBook', sans-serif;

@@ -24,12 +24,10 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+a {
   color: $torture-device;
-}
-
-p {
-  font-family: $avenir-roman;
+  font-family: $avenir-light;
 }
 
 h5 {

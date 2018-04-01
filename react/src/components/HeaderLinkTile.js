@@ -10,6 +10,7 @@ class HeaderLinkTile extends Component {
       return(
         <div>
           <div className='logo-container'>
+          <img className="logo" src={assetHelper["nlgc.png"]}></img>
           </div>
           <nav className='navigation'>
             <div className="navigation__container">
@@ -26,4 +27,3 @@ class HeaderLinkTile extends Component {
     }
   }
   export default HeaderLinkTile;
-  // <img className="logo" src={assetHelper["nlgc.svg"]}></img>

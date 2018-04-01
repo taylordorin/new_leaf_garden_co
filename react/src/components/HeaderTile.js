@@ -3,6 +3,7 @@ import HeaderLinkTile from './HeaderLinkTile';
 import LandingImageTile from './LandingImageTile';
 import GeneralInfoTile from './GeneralInfoTile';
 import ServiceCardTile from './ServiceCardTile';
+import OurTeamTile from './OurTeamTile';
 
 class HeaderTile extends Component {
   constructor(props){
@@ -16,6 +17,7 @@ class HeaderTile extends Component {
         <LandingImageTile />
         <GeneralInfoTile />
         <ServiceCardTile />
+        <OurTeamTile />
       </div>
     )
   }

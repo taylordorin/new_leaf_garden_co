@@ -1,0 +1,11 @@
+@import "./helper/_manifest";
+
+.our-team {
+  margin: 50px 0;
+  &__container {
+    h1 {
+      text-align: center;
+      color: $torture-device;
+    }
+  }
+}

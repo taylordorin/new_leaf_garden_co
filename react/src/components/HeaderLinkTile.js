@@ -9,9 +9,7 @@ class HeaderLinkTile extends Component {
     render(){
       return(
         <div>
-          <div className='logo-container'>
-            
-          </div>
+          <div className='logo-container'></div>
           <nav className='navigation'>
             <div className="navigation__container">
                 <ul>

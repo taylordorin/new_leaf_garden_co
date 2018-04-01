@@ -3,20 +3,15 @@
 
 @include font-face('Avenir-Roman-webfont');
 @include font-face('Avenir-Medium-webfont');
-@include font-face('Avenir-Black-webfont');
 @include font-face('Avenir-Light-webfont');
-@include font-face('Avenir-MediumOblique-webfont');
-@include font-face('Avenir-Oblique-webfont');
 
 $avenir-roman: 'Avenir-Roman-webfont', sans-serif;
 $avenir-medium: 'Avenir-Medium-webfont', sans-serif;
-$avenir-black: 'Avenir-Black-webfont', sans-serif;
 $avenir-light: 'Avenir-Light-webfont', sans-serif;
-$avenir-oblique: 'venir-MediumOblique-webfont', sans-serif;
-$avenir-medium-blique: 'Avenir-Oblique-webfont', sans-serif;
-$berlin-email: 'Berlin-Email-Schaddow', serif;
 
-$franklein-book: 'FranKleinBook', sans-serif;
+$body: 'Open Sans', sans-serif;
+$headline: 'EB Garamond', serif;
+
 
 h1,
 h2,
@@ -27,9 +22,21 @@ h6,
 p,
 a {
   color: $torture-device;
-  font-family: $avenir-light;
+  font-family: $body;
+  font-weight: 300;
 }
 
-h5 {
-  font-family: $avenir-medium;
+h5,
+h6 {
+  font-family: $body;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: $headline;
+}
+
+.button {
+  font-weight: 600;
 }

@@ -28,11 +28,11 @@
 }
 
 .logo-container {
+  background-image: image-url('nlgc.png');
+  background-position: center;
+  background-repeat: no-repeat;
   justify-content: space-around;
   display: flex;
-
-  .logo {
-    height: 100px;
-    margin: 20px 0;
-  }
+  height: 100px;
+  margin: 20px 0;
 }

@@ -1,42 +1,72 @@
 @import "./helper/_manifest";
 
 .service {
-  background-color: $poached-ivory;
-  padding: 60px 0;
-
-  &__wrapper {
+    background-color: $poached-ivory;
+    padding: 60px 0;
+}
+.cards__product {
     display: flex;
     justify-content: space-between;
     text-align: center;
     max-width: 1150px;
     margin: 0 auto;
-  }
-  &__card {
-    width: 28%;
+}
+.service {
+  .svc-card {
+    flex: 1 0 30%;
+    max-width: 30%;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    &__body {
+      margin: 0 0 2rem 0;
+      padding: 0 0 2rem 0;
 
-    h6,
-    p {
-      font-size: 16px;
-    }
+      h6,
+      p {
+        font-size: 16px;
+      }
 
-    h6 {
-      line-height: 1.4;
-      margin-top: 0;
-      margin-bottom: 1.5rem;
-      text-transform: uppercase;
+      h6 {
+        line-height: 1.4;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+      }
+      p {
+        margin-bottom: 1.5rem;
+      }
     }
-    p {
-      margin-bottom: 1.5rem;
+    .button-base {
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center;
     }
   }
-  .primary {
-    background-color: $moss-carpet;
+}
+
+.primary {
+  background-color: $moss-carpet;
+  color: #ffffff;
+  border-radius: 4px;
+  text-transform: uppercase;
+  width: 150px;
+  &:hover {
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    background-color: $photosynthesis;
     color: #ffffff;
-    border-radius: 4px;
-    text-transform: uppercase;
-    width: 150px;
-    &:hover {
-      background-color: $photosynthesis;
-    }
   }
+}
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 1rem 0;
+  padding: 0.65em 1em;
+  -webkit-appearance: none;
+  text-align: center;
+  cursor: pointer;
 }

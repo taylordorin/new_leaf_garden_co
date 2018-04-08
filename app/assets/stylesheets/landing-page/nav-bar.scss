@@ -21,18 +21,24 @@
         font-size: .85rem;
         text-decoration: none;
         color: $torture-device;
+        &:after {
+          border-bottom: 1px solid $torture-device;
+          content: "";
+          display: block;
+          margin: 0.25em auto 0;
+          transition: width 250ms ease-in-out 0s;
+          width: 0;
+        }
+        &:hover:after {
+          transition: width 100ms ease-in-out 0s;
+          width: 100%;
+        }
       }
     }
   }
 }
 
 .logo-container {
-  // background-image: image-url('nlgc.svg');
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // justify-content: space-around;
-  // display: flex;
-  // height: 100px;
   text-align: center;
   margin: 20px 0;
   svg {

@@ -11,7 +11,7 @@ class ContactUsTile extends Component {
         <div className="contact-us">
           <h1>Contact and Hours</h1>
             <div className="contact-us__address">
-              <h4>New leaf Garden Company at Hall’s Christmas Tree Farm</h4>
+              <h4>New Leaf Garden Company at Hall’s Christmas Tree Farm</h4>
               <p>816 Douty Hill Road  |  Sangerville Maine 04479 <br/>
               207-564-3603 <br/>
               newleafgardencompany@gmail.com</p>

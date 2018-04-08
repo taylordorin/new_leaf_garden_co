@@ -52,7 +52,8 @@
   width: 150px;
   &:hover {
     transition: background-color 0.25s ease-out, color 0.25s ease-out;
-    background-color: $photosynthesis;
+    // background-color: $photosynthesis;
+    background-color: darken($moss-carpet, 10%);
     color: $white;
   }
 }

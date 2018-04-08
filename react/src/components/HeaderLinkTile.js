@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+import LogoTile from './LogoTile';
 
 class HeaderLinkTile extends Component {
   constructor(props){
@@ -9,7 +10,7 @@ class HeaderLinkTile extends Component {
     render(){
       return(
         <div>
-          <div className='logo-container'></div>
+          <LogoTile />
           <nav className='navigation'>
             <div className="navigation__container">
                 <ul>

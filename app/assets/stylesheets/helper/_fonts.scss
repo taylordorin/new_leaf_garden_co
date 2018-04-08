@@ -25,6 +25,7 @@ a {
   font-family: $body;
   font-weight: 400;
 }
+h4,
 p {
   font-size: 1rem;
 }
@@ -43,6 +44,11 @@ h1 {
 h3 {
   font-size: 1.3rem;
   font-weight: 700;
+}
+
+h4 {
+  font-weight: 700;
+  line-height: 1.5;
 }
 
 .btn {

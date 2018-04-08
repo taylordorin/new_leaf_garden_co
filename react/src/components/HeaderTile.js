@@ -4,6 +4,7 @@ import LandingImageTile from './LandingImageTile';
 import GeneralInfoTile from './GeneralInfoTile';
 import ServiceCardTile from './ServiceCardTile';
 import OurTeamTile from './OurTeamTile';
+import ContactUsTile from './ContactUsTile';
 
 class HeaderTile extends Component {
   constructor(props){
@@ -18,6 +19,7 @@ class HeaderTile extends Component {
         <GeneralInfoTile />
         <ServiceCardTile />
         <OurTeamTile />
+        <ContactUsTile />
       </div>
     )
   }

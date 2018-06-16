@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import HeaderLinkTile from './HeaderLinkTile';
-import LandingImageTile from './LandingImageTile';
+import ImageTileTest from './ImageTileTest';
 import GeneralInfoTile from './GeneralInfoTile';
 import ServiceCardTile from './ServiceCardTile';
 import OurTeamTile from './OurTeamTile';
@@ -15,7 +15,7 @@ class HeaderTile extends Component {
     return(
       <div>
         <HeaderLinkTile />
-        <LandingImageTile />
+        <ImageTileTest />
         <GeneralInfoTile />
         <ServiceCardTile />
         <OurTeamTile />

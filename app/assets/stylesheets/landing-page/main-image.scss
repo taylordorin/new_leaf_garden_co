@@ -1,21 +1,100 @@
 @import "./helper/_manifest";
 
-.background-image {
-  background-image: image-url('HCTF_dusk_crop.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 450px;
-  min-width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+// .background-image {
+//   background-image: image-url('HCTF_dusk_crop.jpg');
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   width: 100%;
+//   height: 450px;
+//   min-width: 50%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//
+//   .main-intro_block {
+//     align-self: center;
+//     h1 {
+//       color: $white;
+//     }
+//   }
+// }
 
-  .main-intro_block {
-    align-self: center;
-    h1 {
-      color: $white;
+@mixin keyframes ($name) {
+  @-webkit-keyframes #{$name} {@content};
+  @-moz-keyframes #{$name} {@content};
+  @-o-keyframes #{$name} {@content};
+  @keyframes #{$name} {@content}
+}
+
+@mixin animation($val) {
+  -webkit-animation: $val;
+  -moz-animation: $val;
+  -o-animation: $val;
+  animation: $val
+}
+
+@mixin animation-delay ($val) {
+  -webkit-animation-delay: $val;
+  -moz-animation-delay: $val;
+  -o-animation-delay: $val;
+  animation-delay: $val
+}
+
+@function background($background-name) {
+  @return map-get($background, $background-name);
+}
+
+$num: 3; /*slider quantity*/
+$background:( 1:'https://s19.postimg.cc/7gktcfgir/HCTF_crop.jpg',
+              2:'https://s19.postimg.cc/wmlrja4yb/HCTF_dusk_crop.jpg',
+              3:'https://s19.postimg.cc/god1t5xvn/HCTF_snow_crop.jpg'
+);/*slider background*/
+
+@include keyframes (animation1) {
+  0% { opacity: 0; }
+  11.11% { opacity: 1; }
+  33.33% { opacity: 1; }
+  44.44% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.slidecontainer {
+    display: flex;
+    justify-content: center;
+    height: 450px;
+
+    .main-intro_block {
+      align-self: center;
+      h1 {
+        color: $white;
+      }
+    }
+  .slideshow {
+    li {
+      width: 100%;
+      height: 450px;
+      min-width: 50%;
+      left: 0;
+      position: absolute;
+      color: transparent;
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: none;
+      opacity: 0;
+      z-index: -3;
+      backface-visibility: hidden;
+      @include animation(animation1 #{$num * 8s } infinite); /*don't use calc*/
+      @for $i from 1 through $num {
+        &:nth-child( #{$i} ) {
+          @include animation-delay( #{($i - 1) * 8s} ); /*don't use calc*/
+          background: url( #{background($i)} ) no-repeat center;
+        }
+      }
+      &:nth-child(n) {
+        opacity: 0;
+        background-size: cover;
+      }
     }
   }
 }

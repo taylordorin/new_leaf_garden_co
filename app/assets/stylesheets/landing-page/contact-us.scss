@@ -6,6 +6,10 @@
   max-width: 1150px;
   margin: 0 auto;
   border-top: 1px solid $white;
+  @media only screen and (min-width: 600px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .contact-us {
@@ -35,8 +39,6 @@
     margin: 0;
   }
   @media only screen and (min-width: 600px) {
-    display: flex;
-    justify-content: space-between;
     .contact-card {
       flex: 1 0 30%;
       max-width: 30%;

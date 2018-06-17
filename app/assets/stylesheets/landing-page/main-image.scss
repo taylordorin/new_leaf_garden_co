@@ -59,21 +59,25 @@ $background:( 1:'https://s19.postimg.cc/7gktcfgir/HCTF_crop.jpg',
   100% { opacity: 0; }
 }
 
+
 .slidecontainer {
     display: flex;
     justify-content: center;
-    height: 450px;
+    height: 200px;
 
     .main-intro_block {
       align-self: center;
+      text-align: center;
       h1 {
         color: $white;
+        font-size: 2rem;
       }
     }
-  .slideshow {
+  ul.slideshow {
+    margin: 0px;
     li {
       width: 100%;
-      height: 450px;
+      height: 200px;
       min-width: 50%;
       left: 0;
       position: absolute;
@@ -94,6 +98,19 @@ $background:( 1:'https://s19.postimg.cc/7gktcfgir/HCTF_crop.jpg',
       &:nth-child(n) {
         opacity: 0;
         background-size: cover;
+      }
+    }
+  }
+  @media only screen and (min-width: 600px) {
+    height: 450px;
+    .main-intro_block {
+      h1 {
+        font-size: 4rem;
+      }
+    }
+    ul.slideshow {
+      li {
+        height: 450px;
       }
     }
   }

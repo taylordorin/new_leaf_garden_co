@@ -11,24 +11,28 @@
 }
 
 .team__cards {
-  display: flex;
-  justify-content: space-between;
+  display: block;
   text-align: center;
   max-width: 1150px;
   margin: 0 auto;
+  padding: 0 20px;
+  @media only screen and (min-width: 600px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .team {
-    padding: 60px 0 0 0;
+    padding: 20px 0 0 0;
 
     .team-card {
-      flex: 1 0 30%;
-      max-width: 30%;
       border: none;
       border-radius: 0;
       position: relative;
+      margin-bottom: 35px;
       &__img {
-        margin-bottom: 2.3rem;
+        max-width: 50%;
+        margin: 0 auto 1rem auto;
         .portrait{
           border-radius: 50%;
         }
@@ -46,4 +50,16 @@
         }
       }
     }
+      @media only screen and (min-width: 600px) {
+        padding: 60px 0 0 0;
+        .team-card {
+          flex: 1 0 30%;
+          max-width: 30%;
+          margin-bottom: 0px;
+          &__img {
+            max-width: 100%;
+            margin-bottom: 2.3rem;
+          }
+        }
+      }
 }

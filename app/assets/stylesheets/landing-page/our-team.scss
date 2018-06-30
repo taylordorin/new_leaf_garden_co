@@ -27,52 +27,52 @@
 }
 
 .team {
-    padding: 20px 0 0 0;
+  padding: 20px 0 0 0;
 
-    .team-card {
-      border: none;
-      border-radius: 0;
-      position: relative;
-      margin-bottom: 35px;
-      &:last-child {
-        margin-bottom: 0px;
+  .team-card {
+    border: none;
+    border-radius: 0;
+    position: relative;
+    margin-bottom: 35px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+    &__img {
+      max-width: 50%;
+      margin: 0 auto 1rem auto;
+      .portrait{
+        border-radius: 50%;
       }
+    }
+    &__body {
+      h3 {
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 1rem;
+      }
+      h6 {
+        line-height: 1.4;
+        color: $photosynthesis;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+  @media only screen and (min-width: 600px) {
+    padding: 60px 0 0 0;
+    .team-card {
+      flex: 1 0 30%;
+      max-width: 30%;
+      margin-bottom: 0px;
       &__img {
-        max-width: 50%;
-        margin: 0 auto 1rem auto;
-        .portrait{
-          border-radius: 50%;
-        }
+        max-width: 100%;
+        margin-bottom: 2.3rem;
       }
       &__body {
         h3 {
-          text-transform: uppercase;
-          margin: 0;
-          font-size: 1rem;
-        }
-        h6 {
-          line-height: 1.4;
-          color: $photosynthesis;
-          margin-top: 0;
-          margin-bottom: 1.5rem;
+          font-size: 1.3rem;
         }
       }
     }
-      @media only screen and (min-width: 600px) {
-        padding: 60px 0 0 0;
-        .team-card {
-          flex: 1 0 30%;
-          max-width: 30%;
-          margin-bottom: 0px;
-          &__img {
-            max-width: 100%;
-            margin-bottom: 2.3rem;
-          }
-          &__body {
-            h3 {
-              font-size: 1.3rem;
-            }
-          }
-        }
-      }
+  }
 }
